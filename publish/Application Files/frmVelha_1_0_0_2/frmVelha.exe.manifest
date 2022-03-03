@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="frmVelha.exe" version="1.0.0.2" publicKeyToken="1680783bd8252e67" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="devil.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="frmVelha" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="frmVelha.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks.Vs" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmVelha.exe" size="56832">
+      <assemblyIdentity name="frmVelha" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>X70UaFAKeGT0DtXXgFjf9fZFIMA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="devil.ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wM+VoUkY9vOGtZJY9KDqNqoB6Fw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CASA-75573E8B50\Aroni" issuerKeyHash="6ede3fa98dca5f8959fc31ca52094a543b388e13" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>xMPHvAj4ur6f8LdkXZIWGbGxusU=</DigestValue></Reference></SignedInfo><SignatureValue>hwPVH8DwrTRPahZ3zjQY7FBeO0JvWjFWeINWeWTUQBBm1oVt9wMjIW38ild636SzVbWp/ZbZI53UqgX+KqJ7z0Ozg0NCNEyqLjXEK1OSM8p7TSRnrODJiKAHxmgko2n0cil0qD1pU6sndiBSz+0rCkYXk0MOkREN+RgC6CfRoLY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rxSn7VpKd8kSJUQsSQRps24xVwbBKthdSjQTzNfeyL+U567ke8rl1IAutMWFuXvS5FuDtmAisvZ6oQdPLthSwS5bYf9v3hnZjxX+oaNLwebcisjPl7xjekDX/VBRK3ZOFk9E/Nqll67CznyQTvtu+oG8sSW4qudeFeqxgiKOlLk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c5bab1b11916925d64b7f09fbebaf808bcc7c3c4" Description="" Url=""><as:assemblyIdentity name="frmVelha.exe" version="1.0.0.2" publicKeyToken="1680783bd8252e67" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CASA-75573E8B50\Aroni</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>OTKXwELz2+Tc/Zjcnak5RvB9Dyw=</DigestValue></Reference></SignedInfo><SignatureValue>N4R3l6i/Srt/kMBSXOp3UmbKE5gR7qFlyO65P7p1MqwcELJAR7QeIOjQQSo47oOubia2F4MSlbuYo4vfAjOlosRmyo9Bdzmb4cimLENxh8c2eEZ/Z4SF1eXitNqWIc9YJxNH03BrHMUIaKHvmKwbHGLiYjeNvavYtFKGeoU59mQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rxSn7VpKd8kSJUQsSQRps24xVwbBKthdSjQTzNfeyL+U567ke8rl1IAutMWFuXvS5FuDtmAisvZ6oQdPLthSwS5bYf9v3hnZjxX+oaNLwebcisjPl7xjekDX/VBRK3ZOFk9E/Nqll67CznyQTvtu+oG8sSW4qudeFeqxgiKOlLk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAVKgAwIBAgIQLb2y+L3d/6tMpkwcN4NhWzAJBgUrDgMCHQUAMDUxMzAxBgNVBAMeKgBDAEEAUwBBAC0ANwA1ADUANwAzAEUAOABCADUAMABcAEEAcgBvAG4AaTAeFw0xMjA3MjgyMzA5NTJaFw0xMzA3MjkwNTA5NTJaMDUxMzAxBgNVBAMeKgBDAEEAUwBBAC0ANwA1ADUANwAzAEUAOABCADUAMABcAEEAcgBvAG4AaTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEArxSn7VpKd8kSJUQsSQRps24xVwbBKthdSjQTzNfeyL+U567ke8rl1IAutMWFuXvS5FuDtmAisvZ6oQdPLthSwS5bYf9v3hnZjxX+oaNLwebcisjPl7xjekDX/VBRK3ZOFk9E/Nqll67CznyQTvtu+oG8sSW4qudeFeqxgiKOlLkCAwEAATAJBgUrDgMCHQUAA4GBAEX04o6SDYgK0XY03go1UgFhvT6NKU4gGvLiw5fS9PCxbqwsWgNH2lClh3f6076j6whpJDcA67/spB2MKlIIzeADRuKG84UOXGts8fMgUyw9LCpot86ACNTZLyX2IR7M8eEj++7awPOXhe1Rxa5NGavbIW4M1ePzbvZgGs0VwJDq</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
